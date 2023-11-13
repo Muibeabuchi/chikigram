@@ -12,7 +12,6 @@
   "dependencies": {
     "@tanstack/react-query": "^4.35.3",
     "@tanstack/react-query-devtools": "^4.35.3",
-    "@tanstack/react-router": "^0.0.1-beta.209",
     "appwrite": "^13.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
