@@ -1,5 +1,5 @@
 {
-  "name": "futodiary",
+  "name": "Chikigram",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.35.3",
     "@tanstack/react-query-devtools": "^4.35.3",
+    "@tanstack/react-router": "^0.0.1-beta.209",
     "appwrite": "^13.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -21,7 +22,6 @@
     "react-hook-form": "^7.46.1",
     "react-router-dom": "^6.16.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.2"
   },
   "devDependencies": {
@@ -37,6 +37,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
