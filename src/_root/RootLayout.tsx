@@ -1,7 +1,10 @@
-import React from "react";
+// import React from "react";
+import { Outlet } from "react-router-dom";
 
-type Props = {};
-
-export default function RootLayout({}: Props) {
-  return <div>RootLayout</div>;
+export default function RootLayout() {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }
