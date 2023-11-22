@@ -25,7 +25,9 @@ const FileUploader = ({ fieldChange, mediaUrl }: FileUploaderProps) => {
   );
 
   const { getRootProps, getInputProps } = useDropzone({
-    onDrop,
+    // using the onDropAccepted prop so that callback function only runs when files are accepted
+    // onDrop,
+    onDropAccepted: onDrop,
     accept: {
       "image/*": [".png", ".jpeg", ".jpg"],
     },
@@ -33,8 +35,12 @@ const FileUploader = ({ fieldChange, mediaUrl }: FileUploaderProps) => {
 
   return (
     <div
-      {...getRootProps()}
-      className="flex flex-center flex-col bg-dark-3 rounded-xl cursor-pointer"
+      {...getRootProps({
+        //? can i pass the classname here?
+        className:
+          "flex flex-center flex-col bg-dark-3 rounded-xl cursor-pointer",
+      })}
+      // className="flex flex-center flex-col bg-dark-3 rounded-xl cursor-pointer"
     >
       <input {...getInputProps()} className="cursor-pointer" />
 
