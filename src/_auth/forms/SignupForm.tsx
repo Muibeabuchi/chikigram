@@ -157,7 +157,7 @@ const SignupForm = () => {
 
           <FormField
             control={form.control}
-            name="password"
+            name="confirmPassword"
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="shad-form_label">
